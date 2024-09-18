@@ -1,0 +1,10 @@
+<!--pages/device/support.wxml-->
+<navigation-bar back="{{false}}">
+  <view slot="left">支持列表</view>
+</navigation-bar>
+<view class="device-grid">
+  <view class="item" wx:for="{{deviceList}}" wx:key="model" data-model="{{item.model}}" bind:tap="routerTo">
+    <image src="{{item.logo}}" mode=""/>
+    <view class="name">{{item.name}}</view>
+  </view>
+</view>

@@ -1,0 +1,41 @@
+<!--pages/device/add.wxml-->
+<navigation-bar back="{{false}}">
+  <view slot="left">添加设备</view>
+</navigation-bar>
+<form catchsubmit="formSubmit">
+  <view class="page-section">
+    <view class="page-section-title">MQTT参数</view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="host" placeholder="host" value="broker-cn.emqx.io" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="username" placeholder="username" value="CMCC_X11" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" password name="password" placeholder="password" value="==CMCC@2024==" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">设备ID</view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="deviceId" placeholder="请输入设备ID" focus value="111005220023418" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="deviceName" placeholder="请输入设备名称" value="CMCC_X11" />
+      </view>
+    </view>
+  </view>
+  <view class="btn-area">
+    <button type="primary" formType="submit">保存</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>

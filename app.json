@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/device/overview",
+    "pages/device/index",
+    "pages/device/add",
+    "pages/device/task",
+    "pages/device/support",
+    "pages/task/index",
+    "pages/user/index"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "smart-IoT"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/device/overview",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/device/support",
+        "text": "添加"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "defaultContentBox": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

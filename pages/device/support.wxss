@@ -1,0 +1,25 @@
+/* pages/device/support.wxss */
+.device-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rpx;
+  padding: 60rpx 20rpx;
+}
+
+.item {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20rpx;
+  border: 2rpx solid #eee;
+  padding: 20rpx;
+  box-shadow: 0 1rpx 2rpx 0 rgba(0,0,0,.1);
+}
+
+.item image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.item .name {
+  margin-top: 4rpx;
+}

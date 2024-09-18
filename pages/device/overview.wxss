@@ -1,0 +1,36 @@
+/* pages/device/overview.wxss */
+.device-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20rpx;
+  padding: 60rpx 20rpx;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 8rpx;
+  border: 2rpx solid #eee;
+  padding: 20rpx;
+  box-shadow: 0 1rpx 2rpx 0 rgba(0, 0, 0, .1);
+}
+
+.item .top {
+  display: flex;
+  align-items: center;
+}
+
+.item .top image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: auto;
+}
+
+.item .name {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  font-weight: 500;
+}
+
+.item .name {
+  margin-top: 4rpx;
+}

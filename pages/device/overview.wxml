@@ -1,0 +1,17 @@
+<!--pages/device/overview.wxml-->
+<navigation-bar back="{{false}}">
+  <view slot="left">设备({{deviceList.length}})</view>
+</navigation-bar>
+<view class="device-list">
+  <view class="item" wx:for="{{deviceList}}" wx:key="model">
+    <view class="top">
+      <image src="{{item.logo}}" mode="" />
+      <switch class="builtin-switch" checked="{{item.switch === 1}}" data-status="{{item.switch}}" data-id="{{item.deviceId}}" bindchange="switchChange" />
+    </view>
+    <view class="name">{{item.name}}</view>
+    <view class="bottom">
+      <view class="localtion"></view>
+      <view class="extra"></view>
+    </view>
+  </view>
+</view>
