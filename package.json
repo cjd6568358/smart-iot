@@ -1,6 +1,23 @@
 {
+  "name": "smart-iot",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "mobx-miniprogram": "^6.12.3",
-    "mobx-miniprogram-bindings": "^4.0.0"
+    "pinia": "^2.1.7",
+    "vant": "^4.9.6",
+    "vite-plugin-pwa": "^0.20.5",
+    "vue": "^3.4.29",
+    "vue-router": "^4.3.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "vite": "^5.3.1"
   }
 }
