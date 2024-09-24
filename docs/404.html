@@ -1,16 +1,25 @@
-// 404.html
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    sessionStorage.redirect = location.href;
-  </script>
-  <meta http-equiv="refresh" content="0;URL='/'">
-  <title>404</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/smart-iot/favicon.ico">
+    <link rel="apple-touch-icon" href="/smart-iot/iot.png" sizes="128x128" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧物联</title>
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/smart-iot/assets/index-DQjqhQjN.js"></script>
+    <link rel="stylesheet" crossorigin href="/smart-iot/assets/index-DiIL7ZzG.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
 </html>
