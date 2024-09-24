@@ -13,7 +13,7 @@ const username = ref('CMCC_X11');
 const password = ref('==CMCC@2024==');
 const deviceId = ref('111005220023418');
 const deviceName = ref('CMCC_X11');
-
+const model = route.params.model
 const onSubmit = (values) => {
     const { host, username, password, deviceId, deviceName } = values
     if (!host) {
@@ -24,9 +24,9 @@ const onSubmit = (values) => {
         Toast('deviceId 必填');
         return
     }
-    addSub(deviceId, { host, username, password }, (data) => deviceStore.setState(deviceId, { ...data, ...devices[route.params.model], name: deviceName })).then(() => {
+    addSub(deviceId, { host, username, password }, (data) => deviceStore.setState(deviceId, { ...data, ...devices[model], name: deviceName })).then(() => {
         getStatus(deviceId)
-        localStorage.setItem('device_' + deviceId, JSON.stringify({ options: { host, username, password }, name: deviceName, model: route.params.model }))
+        localStorage.setItem('device_' + deviceId, JSON.stringify({ options: { host, username, password }, name: deviceName, model }))
         router.push({ name: "deviceIndex" })
     }, (err) => {
         Toast.fail(err.message);
