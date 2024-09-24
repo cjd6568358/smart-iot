@@ -13,22 +13,22 @@ export default defineConfig({
     outDir: "docs",
   },
   plugins: [
-    VitePWA({
-      includeAssets: ['favicon.ico', 'iot.png'],
-      manifest: {
-        name: 'Smart IoT App',
-        short_name: 'SmartIoT',
-        description: 'control family IoT device',
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: 'iot.png',
-            sizes: '128x128',
-            type: 'image/png',
-          },
-        ],
-      },
-    }),
+    // VitePWA({
+    //   includeAssets: ['favicon.ico', 'iot.png'],
+    //   manifest: {
+    //     name: 'Smart IoT App',
+    //     short_name: 'SmartIoT',
+    //     description: 'control family IoT device',
+    //     theme_color: '#ffffff',
+    //     icons: [
+    //       {
+    //         src: 'iot.png',
+    //         sizes: '128x128',
+    //         type: 'image/png',
+    //       },
+    //     ],
+    //   },
+    // }),
     vue(),
     vueJsx(),
     createStyleImportPlugin({
