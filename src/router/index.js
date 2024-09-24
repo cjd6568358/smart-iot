@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,16 +6,48 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      redirect: "/device"
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/device',
+      name: 'deviceIndex',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }
+      component: () => import('../views/device/IndexView.vue')
+    },
+    {
+      path: '/device/support',
+      name: 'deviceSupport',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/device/SupportView.vue')
+    },
+    {
+      path: '/device/:model/add',
+      name: 'deviceAdd',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/device/AddView.vue')
+    },
+    {
+      path: '/device/:id',
+      name: 'deviceInfo',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/device/InfoView.vue')
+    },
+    {
+      path: '/user',
+      name: 'userIndex',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/user/IndexView.vue')
+    },
   ]
 })
 

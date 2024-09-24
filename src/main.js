@@ -5,10 +5,13 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+import { initDeviceStore } from './stores/device'
 
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+
+initDeviceStore()
 
 app.mount('#app')
