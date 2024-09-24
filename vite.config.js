@@ -9,6 +9,9 @@ import { VitePWA } from 'vite-plugin-pwa';
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "/smart-iot/",
+  build: {
+    outDir: "docs",
+  },
   plugins: [
     VitePWA({
       includeAssets: ['favicon.ico', 'iot.png'],
