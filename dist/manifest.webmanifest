@@ -1,1 +1,0 @@
-{"name":"Smart IoT App","short_name":"SmartIoT","start_url":"/smart-iot/","display":"standalone","background_color":"#ffffff","lang":"en","scope":"/smart-iot/","description":"control family IoT device","theme_color":"#ffffff","icons":[{"src":"iot.png","sizes":"128x128","type":"image/png"}]}
