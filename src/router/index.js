@@ -32,22 +32,22 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/device/AddView.vue')
     },
-    {
-      path: '/device/:id',
-      name: 'deviceInfo',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/device/InfoView.vue')
-    },
-    {
-      path: '/user',
-      name: 'userIndex',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/user/IndexView.vue')
-    },
+    // {
+    //   path: '/device/:id',
+    //   name: 'deviceInfo',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (About.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/device/InfoView.vue')
+    // },
+    // {
+    //   path: '/user',
+    //   name: 'userIndex',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (About.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/user/IndexView.vue')
+    // },
   ]
 })
 
